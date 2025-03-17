@@ -174,7 +174,7 @@ class FeedbackWidgetState extends State<FeedbackWidget>
                         id: _screenshotId,
                         child: Padding(
                           padding: EdgeInsets.symmetric(
-                            horizontal: animation.value > 0 ? 0 : padding,
+                            horizontal: animation.value <= 0 ? 0 : padding,
                           ),
                           child: ScaleAndFade(
                             progress: sheetProgress,
